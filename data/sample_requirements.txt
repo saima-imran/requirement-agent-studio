@@ -1,0 +1,8 @@
+The system should be fast.
+Users must login before accessing reports.
+Passwords shall be encrypted.
+The application should be user friendly.
+The system shall provide explanations to affected users.
+A human operator must be able to override automated decisions.
+Training data shall be accurate and validated.
+The organisation shall identify and control system risks.
