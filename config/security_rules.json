@@ -1,0 +1,11 @@
+{
+  "security_terms": {
+    "password": "Specify how passwords must be stored and protected.",
+    "login": "Specify authentication and access-control requirements.",
+    "encrypted": "Specify the encryption algorithm or security standard."
+  },
+  "severity": "high"
+}
+
+
+

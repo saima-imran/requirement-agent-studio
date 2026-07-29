@@ -1,0 +1,25 @@
+{
+  "compliance_areas": {
+    "data": {
+      "area": "Data Governance",
+      "suggestion": "Document the data source, quality controls, and validation process."
+    },
+    "explanation": {
+      "area": "Transparency",
+      "suggestion": "Specify what explanation must be provided and to whom."
+    },
+    "human": {
+      "area": "Human Oversight",
+      "suggestion": "Define when and how a human can review or override the system."
+    },
+    "risk": {
+      "area": "Risk Management",
+      "suggestion": "Specify how risks will be identified, assessed, and controlled."
+    },
+    "accurate": {
+      "area": "Accuracy and Robustness",
+      "suggestion": "Define measurable accuracy and robustness criteria."
+    }
+  },
+  "severity": "high"
+}
