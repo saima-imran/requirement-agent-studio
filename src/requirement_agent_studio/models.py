@@ -20,4 +20,12 @@ class ReviewDecision:
     reviewer: str
     decision: str
     comment: str
+
+@dataclass
+class AIQualityAnalysis:
+    is_ambiguous: bool
+    reason: str
+    improved_requirement: str
+    confidence: float
+        
     
