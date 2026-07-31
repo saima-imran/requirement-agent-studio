@@ -4,11 +4,11 @@
 
 Improving software requirements quality through ArtificialIntelligence, Requirements Engineering, and a modular multi-agentarchitecture.
 
-##Overview
+## Overview
 
 Requirement Agent Studio is an AI-powered software engineeringapplication designed to assist software engineers, business analysts,and researchers in improving software requirements beforeimplementation.
 
-##Why This Project?
+## Why This Project?
 
 Software defects frequently originate from unclear, incomplete, orinconsistent requirements. During my internship at China Euro VehicleTechnology (CEVT), I contributed to developing industrial trainingmaterial on writing high-quality software requirements. Working withindustrial requirements engineering practices inspired me to explore howArtificial Intelligence can support software engineers during therequirements engineering phase.
 
@@ -32,7 +32,7 @@ Requirement Agent Studio is my practical exploration of that question.
 
 8-Modular multi-agent architecture
 
-##System Architecture
+## System Architecture
 
 Requirement Document
     ↓
@@ -47,7 +47,7 @@ Markdown Report
     ↓
 Streamlit Dashboard
 
-##Technology Stack
+## Technology Stack
 
 Python
 
@@ -74,7 +74,7 @@ python -m streamlit run streamlit_app.py
 
 
 
-##Screenshots
+## Screenshots
 
 ![Home Page](images/home_page.png)
 
@@ -94,7 +94,7 @@ python -m streamlit run streamlit_app.py
 
 
 
-##Research Roadmap
+## Research Roadmap
 
 AI-assisted requirements traceability
 
