@@ -1,294 +1,84 @@
-#  Requirement Agent Studio
+Requirement Agent Studio
 
-An AI-powered Software Requirements Analysis platform built with **Python**, **Streamlit**, and **Ollama**. The application automatically extracts software requirements, analyzes their quality, detects security and compliance issues, and generates a professional analysis report.
+AI-Powered Software Requirements Analysis Platform
 
----
+Improving software requirements quality through ArtificialIntelligence, Requirements Engineering, and a modular multi-agentarchitecture.
 
-##  Overview
+Overview
 
-Requirement Agent Studio helps software engineers and business analysts improve software requirements before development begins.
+Requirement Agent Studio is an AI-powered software engineeringapplication designed to assist software engineers, business analysts,and researchers in improving software requirements beforeimplementation.
 
-The system uses multiple AI-powered analysis agents to detect:
+Why This Project?
 
-- Ambiguous requirements
-- Missing security considerations
-- Compliance issues
-- Requirement quality problems
+Software defects frequently originate from unclear, incomplete, orinconsistent requirements. During my internship at China Euro VehicleTechnology (CEVT), I contributed to developing industrial trainingmaterial on writing high-quality software requirements. Working withindustrial requirements engineering practices inspired me to explore howArtificial Intelligence can support software engineers during therequirements engineering phase.
 
-The application provides an interactive web interface built with Streamlit and generates downloadable Markdown reports.
+Requirement Agent Studio is my practical exploration of that question.
 
----
+Key Features
 
-##  Features
+AI-assisted requirement quality analysis
 
-- Extract requirements from input text
-- AI-powered ambiguity detection using Ollama
-- Requirement quality analysis
-- Security analysis
-- Compliance analysis
-- Interactive Streamlit dashboard
-- Plotly visualizations
-- Downloadable Markdown report
-- Modular multi-agent architecture
-- Unit testing with pytest
-- GitHub Actions CI workflow
+Ambiguity detection
 
----
+Security analysis
 
-##  System Architecture
+Compliance analysis
 
-```
-                  Requirement Document
-                           │
-                           ▼
-           Requirement Extraction Agent
-                           │
-                           ▼
-                  Requirement Objects
-                           │
-                           ▼
-                  Analysis Pipeline
-        ┌─────────────┬─────────────┬─────────────┐
-        ▼             ▼             ▼
- Quality Agent   Security Agent  Compliance Agent
-        │             │             │
-        └─────────────┴─────────────┘
-                      │
-                      ▼
-                 Analysis Findings
-                      │
-                      ▼
-            Markdown Report Generator
-                      │
-                      ▼
-               Streamlit Dashboard
-```
+Streamlit dashboard
 
----
+Plotly visualisations
 
-##  AI Model
+Markdown report generation
 
-This project uses **Ollama** for local Large Language Model inference.
+Modular multi-agent architecture
 
-Default model:
+System Architecture
 
-```
-llama3.2:3b
-```
+Requirement Document
+    ↓
+Requirement Extraction
+    ↓
+Analysis Pipeline
+ ├─ Quality Agent
+ ├─ Security Agent
+ └─ Compliance Agent
+    ↓
+Markdown Report
+    ↓
+Streamlit Dashboard
 
-Advantages:
+Technology Stack
 
-- Runs locally
-- No cloud API required
-- Privacy friendly
-- Fast inference
+Python
 
----
+Streamlit
 
-##  Technology Stack
+Ollama
 
-| Technology | Purpose |
-|------------|---------|
-| Python | Backend |
-| Streamlit | Web Application |
-| Ollama | Local LLM |
-| Plotly | Dashboard Charts |
-| Markdown | Report Generation |
-| Pytest | Unit Testing |
-| GitHub Actions | Continuous Integration |
+Plotly
 
----
+Pytest
 
-##  Project Structure
+GitHub Actions
 
-```
-requirement-agent-studio/
-│
-├── .github/
-│   └── workflows/
-├── config/
-├── data/
-├── output/
-├── src/
-│   └── requirement_agent_studio/
-├── tests/
-├── streamlit_app.py
-├── main.py
-├── requirements.txt
-├── pyproject.toml
-├── README.md
-└── .gitignore
-```
+Installation
 
----
-
-##  Installation
-
-Clone the repository
-
-```bash
 git clone https://github.com/saima-imran/requirement-agent-studio.git
-```
-
-Move into the project directory
-
-```bash
 cd requirement-agent-studio
-```
-
-Create a virtual environment
-
-```bash
 python -m venv venv
-```
 
-Activate the environment
-
-Windows
-
-```bash
-powershell
 .\venv\Scripts\Activate.ps1
-```
 
-Install dependencies
-
-```bash
 pip install -r requirements.txt
-```
-
----
-
-##  Install Ollama
-
-Download Ollama from
-
-https://ollama.com
-
-Pull the required model
-
-```bash
-ollama pull llama3.2:3b
-```
-
-Start Ollama
-
-```bash
-ollama serve
-```
-
----
-
-##  Run the Application
-
-Activate the virtual environment
-
-```bash
-powershell
-.\venv\Scripts\Activate.ps1
-```
-
-Run Streamlit
-
-```bash
 python -m streamlit run streamlit_app.py
-```
 
----
+Screenshots
 
-##  Dashboard
-
-The Streamlit dashboard provides:
-
-- Requirement statistics
-- Severity distribution
-- Findings by analysis agent
-- Interactive Plotly charts
-- Downloadable Markdown report
-
----
-
-##  Generated Report
-
-The application generates a Markdown report containing:
-
-- Requirement summary
-- Quality findings
-- Security findings
-- Compliance findings
-- AI recommendations
-
----
-
-##  Testing
-
-Run all tests
-
-```bash
-pytest
-```
-
----
-
-## 📸 Screenshots
-
-### Application Home Page
-
-![Application Home Page](images/home_page.png)
-
-### Analysis Dashboard
-
-![Analysis Dashboard](images/dashboard.png)
-
-### Analysis Findings
-
-![Analysis Findings](images/analysis_findings.png)
-
-### Report Download
-
+![Home Page](images/home_page.png)
+![Dashboard](images/dashboard.png)
+![Findings](images/analysis_findings.png)
 ![Report Download](images/report_download.png)
-
-### Generated Markdown Report
-
-![Generated Markdown Report](images/markdown_report.png)
-
-##  Future Improvements
-
-- PDF report generation
-- DOCX requirement import
-- Requirement traceability matrix
-- Risk assessment agent
-- REST API
-- Docker deployment
-- Multi-language support
-- Authentication
-- Cloud deployment
-
----
-
-##  Author
-
-**Saima Imran**
-
-AI-powered Software Requirements Analysis Platform
-
-Built using Python, Streamlit, Plotly, and Ollama.
-
----
-
-##  License
-
-This project is licensed under the MIT License.
-
----
-
-## ⭐ Acknowledgements
-
-- Python
-- Streamlit
-- Ollama
-- Plotly
-- GitHub
+![Markdown Report](images/markdown_report.png)
 
 
 
@@ -296,6 +86,39 @@ This project is licensed under the MIT License.
 
 
 
+
+
+Research Roadmap
+
+AI-assisted requirements traceability
+
+Continuous requirements validation
+
+Requirements provenance
+
+Goal-oriented requirements modelling
+
+Runtime monitoring
+
+Industrial integration
+
+About the Author
+
+Saima Imran
+
+Software Engineer and Computer Scientist with expertise in RequirementsEngineering, Software Design, Requirements Traceability, and AppliedArtificial Intelligence.
+
+I hold an M.Sc. in Informatics from the University of Skövde, Sweden,and an M.Phil. in Computer Science.
+
+My professional experience includes software process development andrequirements engineering at China Euro Vehicle Technology (CEVT),Gothenburg, where I developed industrial training material on writinghigh-quality software requirements. That experience motivated thisproject and my broader research interest in applying ArtificialIntelligence to improve Requirements Engineering.
+
+I also have more than six years of university teaching experience inSoftware Engineering, Requirements Engineering, Object-Oriented Analysisand Design, and Research Methods.
+
+GitHub: https://github.com/saima-imran
+
+License
+
+MIT License
 
 
 
