@@ -75,14 +75,14 @@ python -m streamlit run streamlit_app.py
 Screenshots
 
 ![Home Page](images/home_page.png)
+
 ![Dashboard](images/dashboard.png)
+
 ![Findings](images/analysis_findings.png)
+
 ![Report Download](images/report_download.png)
+
 ![Markdown Report](images/markdown_report.png)
-
-
-
-
 
 
 
