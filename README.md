@@ -72,15 +72,7 @@ python -m venv venv
 pip install -r requirements.txt
 python -m streamlit run streamlit_app.py
 
-## User Interface
 
-Requirement Agent Studio provides an interactive web interface built with Streamlit. The application enables users to:
-
-- Upload or enter software requirements
-- Analyze requirement quality using AI
-- Review security and compliance findings
-- Visualize analysis results through interactive charts
-- Download a comprehensive Markdown report
 
 Screenshots
 
@@ -93,6 +85,10 @@ Screenshots
 ![Report Download](images/report_download.png)
 
 ![Markdown Report](images/markdown_report.png)
+
+
+
+
 
 
 
@@ -129,6 +125,9 @@ GitHub: https://github.com/saima-imran
 License
 
 MIT License
+
+
+
 
 
 
