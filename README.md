@@ -14,7 +14,7 @@ Software defects frequently originate from unclear, incomplete, orinconsistent r
 
 Requirement Agent Studio is my practical exploration of that question.
 
-**Key Features
+** Key Features
 
 1-AI-assisted requirement quality analysis
 
@@ -61,7 +61,7 @@ Pytest
 
 GitHub Actions
 
-**Installation
+** Installation
 
 git clone https://github.com/saima-imran/requirement-agent-studio.git
 cd requirement-agent-studio
@@ -110,7 +110,7 @@ Industrial integration
 
 ##About the Author
 
-**Saima Imran
+** Saima Imran
 
 Software Engineer and Computer Scientist with expertise in RequirementsEngineering, Software Design, Requirements Traceability, and AppliedArtificial Intelligence.
 
@@ -120,7 +120,7 @@ My professional experience includes software process development andrequirements
 
 I also have more than six years of university teaching experience inSoftware Engineering, Requirements Engineering, Object-Oriented Analysisand Design, and Research Methods.
 
-**GitHub: https://github.com/saima-imran
+** GitHub: https://github.com/saima-imran
 
 License
 
