@@ -1,10 +1,10 @@
-# 🤖 Requirement Agent Studio
+#  Requirement Agent Studio
 
 An AI-powered Software Requirements Analysis platform built with **Python**, **Streamlit**, and **Ollama**. The application automatically extracts software requirements, analyzes their quality, detects security and compliance issues, and generates a professional analysis report.
 
 ---
 
-## 📖 Overview
+##  Overview
 
 Requirement Agent Studio helps software engineers and business analysts improve software requirements before development begins.
 
@@ -19,7 +19,7 @@ The application provides an interactive web interface built with Streamlit and g
 
 ---
 
-## ✨ Features
+##  Features
 
 - Extract requirements from input text
 - AI-powered ambiguity detection using Ollama
@@ -35,7 +35,7 @@ The application provides an interactive web interface built with Streamlit and g
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
                   Requirement Document
@@ -66,7 +66,7 @@ The application provides an interactive web interface built with Streamlit and g
 
 ---
 
-## 🧠 AI Model
+##  AI Model
 
 This project uses **Ollama** for local Large Language Model inference.
 
@@ -85,7 +85,7 @@ Advantages:
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 | Technology | Purpose |
 |------------|---------|
@@ -99,7 +99,7 @@ Advantages:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 requirement-agent-studio/
@@ -122,7 +122,7 @@ requirement-agent-studio/
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 Clone the repository
 
@@ -158,7 +158,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🤖 Install Ollama
+##  Install Ollama
 
 Download Ollama from
 
@@ -178,7 +178,7 @@ ollama serve
 
 ---
 
-## ▶️ Run the Application
+##  Run the Application
 
 Activate the virtual environment
 
@@ -194,7 +194,7 @@ python -m streamlit run streamlit_app.py
 
 ---
 
-## 📊 Dashboard
+##  Dashboard
 
 The Streamlit dashboard provides:
 
@@ -206,7 +206,7 @@ The Streamlit dashboard provides:
 
 ---
 
-## 📄 Generated Report
+##  Generated Report
 
 The application generates a Markdown report containing:
 
@@ -218,7 +218,7 @@ The application generates a Markdown report containing:
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 Run all tests
 
@@ -228,7 +228,7 @@ pytest
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Application Home Page
 
@@ -250,7 +250,7 @@ pytest
 
 ![Generated Markdown Report](images/markdown_report.png)
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - PDF report generation
 - DOCX requirement import
@@ -264,7 +264,7 @@ pytest
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Saima Imran**
 
@@ -274,7 +274,7 @@ Built using Python, Streamlit, Plotly, and Ollama.
 
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the MIT License.
 
