@@ -1,38 +1,38 @@
-Requirement Agent Studio
+##Requirement Agent Studio
 
-AI-Powered Software Requirements Analysis Platform
+**AI-Powered Software Requirements Analysis Platform**
 
 Improving software requirements quality through ArtificialIntelligence, Requirements Engineering, and a modular multi-agentarchitecture.
 
-Overview
+##Overview
 
 Requirement Agent Studio is an AI-powered software engineeringapplication designed to assist software engineers, business analysts,and researchers in improving software requirements beforeimplementation.
 
-Why This Project?
+##Why This Project?
 
 Software defects frequently originate from unclear, incomplete, orinconsistent requirements. During my internship at China Euro VehicleTechnology (CEVT), I contributed to developing industrial trainingmaterial on writing high-quality software requirements. Working withindustrial requirements engineering practices inspired me to explore howArtificial Intelligence can support software engineers during therequirements engineering phase.
 
 Requirement Agent Studio is my practical exploration of that question.
 
-Key Features
+**Key Features
 
-AI-assisted requirement quality analysis
+1-AI-assisted requirement quality analysis
 
-Ambiguity detection
+2-Ambiguity detection
 
-Security analysis
+3-Security analysis
 
-Compliance analysis
+4-Compliance analysis
 
-Streamlit dashboard
+5-Streamlit dashboard
 
-Plotly visualisations
+6-Plotly visualisations
 
-Markdown report generation
+7-Markdown report generation
 
-Modular multi-agent architecture
+8-Modular multi-agent architecture
 
-System Architecture
+##System Architecture
 
 Requirement Document
     ↓
@@ -47,7 +47,7 @@ Markdown Report
     ↓
 Streamlit Dashboard
 
-Technology Stack
+##Technology Stack
 
 Python
 
@@ -61,7 +61,7 @@ Pytest
 
 GitHub Actions
 
-Installation
+**Installation
 
 git clone https://github.com/saima-imran/requirement-agent-studio.git
 cd requirement-agent-studio
@@ -74,7 +74,7 @@ python -m streamlit run streamlit_app.py
 
 
 
-Screenshots
+##Screenshots
 
 ![Home Page](images/home_page.png)
 
@@ -94,7 +94,7 @@ Screenshots
 
 
 
-Research Roadmap
+##Research Roadmap
 
 AI-assisted requirements traceability
 
@@ -108,9 +108,9 @@ Runtime monitoring
 
 Industrial integration
 
-About the Author
+##About the Author
 
-Saima Imran
+**Saima Imran
 
 Software Engineer and Computer Scientist with expertise in RequirementsEngineering, Software Design, Requirements Traceability, and AppliedArtificial Intelligence.
 
@@ -120,7 +120,7 @@ My professional experience includes software process development andrequirements
 
 I also have more than six years of university teaching experience inSoftware Engineering, Requirements Engineering, Object-Oriented Analysisand Design, and Research Methods.
 
-GitHub: https://github.com/saima-imran
+**GitHub: https://github.com/saima-imran
 
 License
 
