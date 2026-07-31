@@ -127,7 +127,7 @@ requirement-agent-studio/
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/requirement-agent-studio.git
+git clone https://github.com/saima-imran/requirement-agent-studio.git
 ```
 
 Move into the project directory
@@ -147,7 +147,8 @@ Activate the environment
 Windows
 
 ```bash
-venv\Scripts\activate
+powershell
+.\venv\Scripts\Activate.ps1
 ```
 
 Install dependencies
@@ -183,7 +184,8 @@ ollama serve
 Activate the virtual environment
 
 ```bash
-venv\Scripts\activate
+powershell
+.\venv\Scripts\Activate.ps1
 ```
 
 Run Streamlit
@@ -228,7 +230,8 @@ pytest
 
 ---
 
-## 📸 Screenshots
+
+## Screenshots
 
 ### Application Home Page
 
@@ -287,6 +290,11 @@ This project is licensed under the MIT License.
 - Ollama
 - Plotly
 - GitHub
+
+
+
+
+
 
 
 
