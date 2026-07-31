@@ -1,172 +1,293 @@
-# Requirement Agent Studio
+# 🤖 Requirement Agent Studio
 
-A modular, human-in-the-loop prototype for AI-assisted requirements engineering.
-
-Requirement Agent Studio demonstrates how a multi-agent architecture can support the analysis of software requirements by combining rule-based reasoning, software engineering principles, and future AI integration.
+An AI-powered Software Requirements Analysis platform built with **Python**, **Streamlit**, and **Ollama**. The application automatically extracts software requirements, analyzes their quality, detects security and compliance issues, and generates a professional analysis report.
 
 ---
 
-# Overview
+## 📖 Overview
 
-Software requirements often contain ambiguity, security concerns, and compliance issues that are difficult to identify manually.
+Requirement Agent Studio helps software engineers and business analysts improve software requirements before development begins.
 
-This project explores how specialised software agents can automatically analyse requirements and produce structured findings that support engineers during the requirements engineering process.
+The system uses multiple AI-powered analysis agents to detect:
 
-The current implementation provides a rule-based foundation designed for future integration with Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG).
+- Ambiguous requirements
+- Missing security considerations
+- Compliance issues
+- Requirement quality problems
+
+The application provides an interactive web interface built with Streamlit and generates downloadable Markdown reports.
 
 ---
 
-# Features
+## ✨ Features
 
-- Requirement extraction from text documents
-- Multi-agent analysis pipeline
+- Extract requirements from input text
+- AI-powered ambiguity detection using Ollama
 - Requirement quality analysis
-- Security requirement analysis
+- Security analysis
 - Compliance analysis
-- Markdown report generation
-- Automated unit testing with pytest
-- Modular and extensible architecture
+- Interactive Streamlit dashboard
+- Plotly visualizations
+- Downloadable Markdown report
+- Modular multi-agent architecture
+- Unit testing with pytest
+- GitHub Actions CI workflow
 
 ---
 
-# Current Architecture
+## 🏗️ System Architecture
 
 ```
-Requirement Document
-        │
-        ▼
-RequirementExtractionAgent
-        │
-        ▼
-Requirement Objects
-        │
-        ▼
-AnalysisPipeline
-        │
- ┌──────┼──────────────┐
- ▼      ▼              ▼
-Quality Security   Compliance
- Agent    Agent        Agent
-        │
-        ▼
- Findings
-        │
-        ▼
-Markdown Report
+                  Requirement Document
+                           │
+                           ▼
+           Requirement Extraction Agent
+                           │
+                           ▼
+                  Requirement Objects
+                           │
+                           ▼
+                  Analysis Pipeline
+        ┌─────────────┬─────────────┬─────────────┐
+        ▼             ▼             ▼
+ Quality Agent   Security Agent  Compliance Agent
+        │             │             │
+        └─────────────┴─────────────┘
+                      │
+                      ▼
+                 Analysis Findings
+                      │
+                      ▼
+            Markdown Report Generator
+                      │
+                      ▼
+               Streamlit Dashboard
 ```
 
 ---
 
-# Project Structure
+## 🧠 AI Model
+
+This project uses **Ollama** for local Large Language Model inference.
+
+Default model:
+
+```
+llama3.2:3b
+```
+
+Advantages:
+
+- Runs locally
+- No cloud API required
+- Privacy friendly
+- Fast inference
+
+---
+
+## 🛠️ Technology Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Python | Backend |
+| Streamlit | Web Application |
+| Ollama | Local LLM |
+| Plotly | Dashboard Charts |
+| Markdown | Report Generation |
+| Pytest | Unit Testing |
+| GitHub Actions | Continuous Integration |
+
+---
+
+## 📂 Project Structure
 
 ```
 requirement-agent-studio/
 │
+├── .github/
+│   └── workflows/
+├── config/
 ├── data/
 ├── output/
 ├── src/
 │   └── requirement_agent_studio/
-│       ├── analysis_pipeline.py
-│       ├── base_agent.py
-│       ├── compliance_agent.py
-│       ├── extractor_agent.py
-│       ├── models.py
-│       ├── quality_agent.py
-│       ├── report_generator.py
-│       └── security_agent.py
-│
 ├── tests/
+├── streamlit_app.py
 ├── main.py
-└── README.md
+├── requirements.txt
+├── pyproject.toml
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-# Running the Project
+## 🚀 Installation
 
-Clone the repository:
+Clone the repository
 
 ```bash
-git clone https://github.com/saima-imran/requirement-agent-studio.git
+git clone https://github.com/YOUR_USERNAME/requirement-agent-studio.git
 ```
 
-Install the dependencies:
+Move into the project directory
 
 ```bash
-pip install pytest
+cd requirement-agent-studio
 ```
 
-Run the project:
+Create a virtual environment
 
 ```bash
-$env:PYTHONPATH="src"
-py main.py
+python -m venv venv
 ```
 
----
+Activate the environment
 
-# Running the Tests
+Windows
 
 ```bash
-py -m pytest
+venv\Scripts\activate
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
 ```
 
 ---
 
-# Example Analysis
+## 🤖 Install Ollama
 
-The system analyses each requirement independently using specialised agents.
+Download Ollama from
 
-Example findings include:
+https://ollama.com
 
-- Ambiguous requirements
-- Security-related requirements
-- Compliance-related requirements
-- Human oversight requirements
-- Transparency requirements
+Pull the required model
 
-The analysis is exported as a Markdown report.
+```bash
+ollama pull llama3.2:3b
+```
 
----
+Start Ollama
 
-# Future Work
-
-The current version provides a rule-based implementation.
-
-Future work includes:
-
-- Configuration-driven agents
-- LLM integration
-- Retrieval-Augmented Generation (RAG)
-- Traceability analysis
-- Explainable AI support
-- EU AI Act compliance assistance
-- ISO/IEC 42001 support
+```bash
+ollama serve
+```
 
 ---
 
-# Technologies
+## ▶️ Run the Application
 
-- Python
-- Object-Oriented Programming
-- Dataclasses
-- pytest
-- Markdown
-- Git
-- GitHub
+Activate the virtual environment
 
----
+```bash
+venv\Scripts\activate
+```
 
-# Research Motivation
+Run Streamlit
 
-This project is part of an ongoing exploration into AI-assisted requirements engineering and trustworthy AI.
-
-The long-term objective is to investigate how specialised AI agents can support requirements analysis while maintaining human oversight, explainability, and compliance with emerging AI regulations.
+```bash
+python -m streamlit run streamlit_app.py
+```
 
 ---
 
-# Author
+## 📊 Dashboard
+
+The Streamlit dashboard provides:
+
+- Requirement statistics
+- Severity distribution
+- Findings by analysis agent
+- Interactive Plotly charts
+- Downloadable Markdown report
+
+---
+
+## 📄 Generated Report
+
+The application generates a Markdown report containing:
+
+- Requirement summary
+- Quality findings
+- Security findings
+- Compliance findings
+- AI recommendations
+
+---
+
+## 🧪 Testing
+
+Run all tests
+
+```bash
+pytest
+```
+
+---
+
+## 📸 Screenshots
+
+### Application Home Page
+
+![Application Home Page](images/home_page.png)
+
+### Analysis Dashboard
+
+![Analysis Dashboard](images/dashboard.png)
+
+### Analysis Findings
+
+![Analysis Findings](images/analysis_findings.png)
+
+### Report Download
+
+![Report Download](images/report_download.png)
+
+### Generated Markdown Report
+
+![Generated Markdown Report](images/markdown_report.png)
+
+## 🔮 Future Improvements
+
+- PDF report generation
+- DOCX requirement import
+- Requirement traceability matrix
+- Risk assessment agent
+- REST API
+- Docker deployment
+- Multi-language support
+- Authentication
+- Cloud deployment
+
+---
+
+## 👨‍💻 Author
 
 **Saima Imran**
 
-Software Engineer | Requirements Engineering | AI-Assisted Software Engineering
+AI-powered Software Requirements Analysis Platform
+
+Built using Python, Streamlit, Plotly, and Ollama.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## ⭐ Acknowledgements
+
+- Python
+- Streamlit
+- Ollama
+- Plotly
+- GitHub
+
+
+
+
